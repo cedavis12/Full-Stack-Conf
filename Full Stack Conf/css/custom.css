@@ -1,19 +1,109 @@
-.navbar .navbar-brand{
-  color:rgba(255, 255, 255, .85);
-  font-size: 1rem;
-  padding-top: .45rem;
+/* ******** GLOBAL STYLES ******** */
+:root {
+  --steel-blue: #546A76;
+  --almost-black: #292E1E;
+  --coral: #E63946;
+  --almost-white: #F8FFF4;
+  --blue-grey: #CFDEE7;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.almost-white {
+  color: var(--almost-white);
+}
+
+.coral {
+  color: var(--coral);
+}
+
+.btn-coral {
+  background: var(--coral);
+  color: white;
+}
+
+.btn-coral:hover {
+  color: white;
+}
+
+.steel-blue {
+  color: var(--steel-blue);
+}
+
+.btn-steel-blue {
+  background: var(--steel-blue);
+  color: white;
+}
+
+.btn-steel-blue:hover{
+  color: white;
+}
+
+a.steel-blue:hover{
+  color: var(--steel-blue);
+  text-decoration: none;
+}
+
+
+/* ******** NAVIGATION ******** */
+
+nav.bg-grey {
+  background: var(--blue-grey);
+  font-size: 1.25rem;
+}
+
+/* ******** JUMBOTRON ******** */
 
 .jumbotron {
   background: url("../img/jumbo-bg.jpg");
   background-size: cover;
 }
 
-.btn,
-.active {
-  transition: .4s;
+/* ******** ABOUT ******** */
+
+#about {
+  background: var(--blue-grey);
+  margin: 0;
 }
 
-.bg-primary {
-  background: #49516F;
+/* ******** SPEAKERS ******** */
+
+.speaker {
+  background: var(--blue-grey);
+}
+
+div.card-block {
+  background: var(--blue-grey);
+}
+
+.card img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+h4.card-title {
+  border-bottom: 1px solid var(--coral);
+}
+
+/* ******** SCHEDULE ******** */
+
+#schedule {
+  background: var(--steel-blue);
+}
+
+#schedule li {
+  background: var(--almost-black);
+  width: 350px;
+}
+
+.line {
+  border-left: 5px solid var(--almost-white);
+  height: 50px;
+  margin: 0;
+}
+
+.scheduler {
+  font-size: 5rem;
+  background: var(--coral);
+  color: white;
+  padding: 2rem;
 }
